@@ -46,7 +46,7 @@ class Element{
       cout<<"\n K     L     M     N     O     P    Q\n";
       cout<<K<<"    "<<L<<"    "<<M<<"    "<<N<<"    "<<O<<"    "<<P<<"    "<<Q;
     }
-    void getele()
+  /* void getele()
     {  cout<<"\nEnter Element's Name:";cin>>name;
        cout<<"\nEnter Atomic Number:";cin>>atno;
        cout<<"\nEnter Element's Symbol:";cin>>symbol;
@@ -61,7 +61,7 @@ class Element{
        cout<<"O:";cin>>O;
        cout<<"P:";cin>>P;
        cout<<"Q:";cin>>Q;
-    }
+    }*/
 };
 /**************************************************************/
 //    FUNCTION SORT USED TO SHOW A THOSE ELEMENTS IN A PART
@@ -143,7 +143,7 @@ int main()
                  break;
        case '5': exit(0);
                  break;
-       case 'i': { i=0; char ans='y';
+     /*case 'i': { i=0; char ans='y';
                    ofstream table;
                    table.open("Periodic.txt",ios::out|ios::app);
                    while(ans=='y')
@@ -154,7 +154,7 @@ int main()
                    }
                    table.close();
                  }
-                 break;
+                 break;*/
         default: { cout<<"\nINVALID CHOICE";}
      }
    }
