@@ -434,12 +434,54 @@ void search_by_atomic_number(vector<Element>& elements) {
 }
 
 void display_periodic_table(vector<Element> elements) {
-    for (auto& element : elements) {
-        cout << element.name << endl;
-        cout << "\tAtomic Number : " << element.atomicNumber << endl;
-        cout << "\tSymbol : " << element.symbol << endl;
-        cout << endl;
+    for (int i = 0; i < elements.size(); ++i) {
+        Element element = elements[i];
+        int atomicNumber = element.atomicNumber;
+        string symbol = element.symbol;
+        const char* sy = symbol.c_str();
+
+        if ((i < 56 || i > 69) && (i < 88 || i > 101)) {
+            if (i == 1) {
+                printf("%85.2s\n", sy);
+            } else if (i == 4 || i == 12) {
+                printf("%55.2s", sy);
+            } else {
+                printf("%5.2s", sy);
+            }
+
+            if (i == 9 || i == 17 || i == 35 || i == 53 || i == 85 ||
+                i == 117) {
+                cout << endl;
+            }
+        }
     }
+
+    for (int i = 56; i < elements.size(); ++i) {
+        Element element = elements[i];
+        int atomicNumber = element.atomicNumber;
+        string symbol = element.symbol;
+        const char* sy = symbol.c_str();
+
+        if ((i >= 56 && i <= 69) || (i >= 88 && i <= 101)) {
+            if (i == 56 || i == 88) {
+                printf("%15.2s", sy);
+            } else {
+                printf("%5.2s", sy);
+            }
+
+            if (i == 69 || i == 101) {
+                cout << endl;
+            }
+        }
+    }
+
+    cout << endl << endl;
+    // for (auto& element : elements) {
+    //     cout << element.name << endl;
+    //     cout << "\tAtomic Number : " << element.atomicNumber << endl;
+    //     cout << "\tSymbol : " << element.symbol << endl;
+    //     cout << endl;
+    // }
 }
 
 int main(int argc, char const* argv[]) {
