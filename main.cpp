@@ -389,17 +389,49 @@ void search_by_name_or_symbol(vector<Element>& elements) {
     for (auto& element : elements) {
         if (element.name.compare(name) == 0 ||
             element.symbol.compare(name) == 0) {
-                print_element(element);
-                found = true;
+            print_element(element);
+            found = true;
         }
     }
 
     if (!found) {
-        cout << "No such element with name or symbol " << name << " is found!" << endl << endl;
+        cout << "No such element with name or symbol " << name << " is found!"
+             << endl
+             << endl;
     }
 }
 
-void search_by_atomic_number(vector<Element>& elements) {}
+void search_by_atomic_number(vector<Element>& elements) {
+    int atomicNumber;
+    bool found = false;
+
+    cout << "Enter atomic number: ";
+    cin >> atomicNumber;
+    cout << endl;
+
+    for (auto& element : elements) {
+        if (element.atomicNumber == atomicNumber) {
+            print_element(element);
+            found = true;
+        }
+    }
+
+    if (!found) {
+        if (atomicNumber == 0) {
+            cout << "Periodic table doesn't contain massless elements right?"
+                 << endl
+                 << endl;
+        } else if (atomicNumber < 0) {
+            cout << "Elment with negative atomic number!! Now we're talking."
+                 << endl
+                 << endl;
+        } else {
+            cout << "Element with atomic number " << atomicNumber
+                 << " is yet to be discovered." << endl
+                 << endl;
+        }
+    }
+}
 
 void display_periodic_table(vector<Element> elements) {
     for (auto& element : elements) {
