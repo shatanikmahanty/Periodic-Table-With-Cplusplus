@@ -535,7 +535,7 @@ int main(int argc, char const* argv[]) {
     add_elements(elements);
 
     while (true) {
-        cout << "\t1. Search element by name or sysmbol" << endl;
+        cout << "\t1. Search element by name or symbol" << endl;
         cout << "\t2. Search element by atomic number" << endl;
         cout << "\t3. Display periodic table" << endl;
         cout << "\t4. Exit" << endl;
