@@ -371,9 +371,35 @@ void add_elements(vector<Element>& elements) {
     elements.push_back(oganesson);
 }
 
-void search_by_name_or_symbol() {}
+void print_element(Element element) {
+    cout << element.name << endl;
+    cout << "\tAtomic Number : " << element.atomicNumber << endl;
+    cout << "\tSymbol : " << element.symbol << endl;
+    cout << endl;
+}
 
-void search_by_atomic_number() {}
+void search_by_name_or_symbol(vector<Element>& elements) {
+    string name;
+    bool found = false;
+
+    cout << "Enter name or symbol: ";
+    cin >> name;
+    cout << endl;
+
+    for (auto& element : elements) {
+        if (element.name.compare(name) == 0 ||
+            element.symbol.compare(name) == 0) {
+                print_element(element);
+                found = true;
+        }
+    }
+
+    if (!found) {
+        cout << "No such element with name or symbol " << name << " is found!" << endl << endl;
+    }
+}
+
+void search_by_atomic_number(vector<Element>& elements) {}
 
 void display_periodic_table(vector<Element> elements) {
     for (auto& element : elements) {
@@ -400,11 +426,11 @@ int main(int argc, char const* argv[]) {
 
         switch (choice) {
             case 1: {
-                search_by_name_or_symbol();
+                search_by_name_or_symbol(elements);
                 break;
             }
             case 2: {
-                search_by_atomic_number();
+                search_by_atomic_number(elements);
                 break;
             }
             case 3: {
