@@ -1,8 +1,19 @@
-#include <stdlib.h>
-
-#include <iostream>
+#include <bits/stdc++.h>
 
 using namespace std;
+
+class Element {
+   public:
+    int atomicNumber;
+    string symbol;
+    string name;
+
+    Element(int an, string s, string n) {
+        atomicNumber = an;
+        symbol = s;
+        name = n;
+    }
+};
 
 void search_by_name_or_symbol() {}
 
@@ -12,6 +23,7 @@ void display_periodic_table() {}
 
 int main(int argc, char const *argv[]) {
     int choice;
+    vector<Element> elements;
 
     while (true) {
         cout << "\t1. Search element by name or sysmbol" << endl;
