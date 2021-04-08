@@ -476,12 +476,6 @@ void display_periodic_table(vector<Element> elements) {
     }
 
     cout << endl << endl;
-    // for (auto& element : elements) {
-    //     cout << element.name << endl;
-    //     cout << "\tAtomic Number : " << element.atomicNumber << endl;
-    //     cout << "\tSymbol : " << element.symbol << endl;
-    //     cout << endl;
-    // }
 }
 
 int main(int argc, char const* argv[]) {
@@ -515,6 +509,7 @@ int main(int argc, char const* argv[]) {
                 exit(0);
             }
             default: {
+                cout << "Unknown input!" << endl;
                 break;
             }
         }
