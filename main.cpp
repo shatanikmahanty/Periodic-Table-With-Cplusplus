@@ -419,8 +419,12 @@ elements.push_back(oganesson);
 
 void print_element(Element element) {
     cout << element.name << endl;
-    cout << "\tAtomic Number : " << element.atomicNumber << endl;
     cout << "\tSymbol : " << element.symbol << endl;
+    cout << "\tAtomic Number : " << element.atomicNumber << endl;
+    cout << "\tAtomic Mass : " << element.atomicMass << endl;
+    cout << "\tElectronic Configuration : " << element.electronicConfiguration << endl;
+    cout << "\tGroup Bloc : " << element.groupBlock << endl;
+    cout << "\tYear Discovered : " << element.yearDiscovered << endl;
     cout << endl;
 }
 
