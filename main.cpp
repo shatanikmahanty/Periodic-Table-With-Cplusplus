@@ -378,6 +378,9 @@ void search_by_atomic_number() {}
 void display_periodic_table(vector<Element> elements) {
     for (auto& element : elements) {
         cout << element.name << endl;
+        cout << "\tAtomic Number : " << element.atomicNumber << endl;
+        cout << "\tSymbol : " << element.symbol << endl;
+        cout << endl;
     }
 }
 
