@@ -560,7 +560,6 @@ int main(int argc, char const* argv[]) {
             }
             default: {
                 cout << "Unknown input!" << endl;
-                break;
             }
         }
     }
