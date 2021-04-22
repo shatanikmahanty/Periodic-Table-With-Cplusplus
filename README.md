@@ -1,4 +1,4 @@
-# Periodic-Table-With-Cplusplus
+# Periodic Table
 
 A command line application to print periodic table and search elements. Search can be either by name, symbol or atomic number. Search result will give a detials of an element like ...
 
@@ -95,3 +95,7 @@ No such element with name or symbol Shuktikam is found!
 Enter your choice : 
 4
 ```
+
+## Credit
+
+Idea taken from [Periodic-Table-With-Cplusplus](https://github.com/OPTIMUS-PRIME2001/Periodic-Table-With-Cplusplus) repo by [OPTIMUS-PRIME2001](https://github.com/OPTIMUS-PRIME2001)
