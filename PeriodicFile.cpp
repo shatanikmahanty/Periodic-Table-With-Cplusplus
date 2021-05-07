@@ -1,8 +1,7 @@
 #include<iostream>
-#include<string.h>
+#include<string>
 #include<fstream>
 #include<cstdlib>
-//#include<cstdio>
 
 using namespace std;
 /**************************************************/
