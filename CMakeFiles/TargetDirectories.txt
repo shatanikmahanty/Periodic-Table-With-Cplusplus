@@ -1,3 +1,0 @@
-/media/ritam/Storage/Projects/CLionProjects/Playground/Periodic_Table/CMakeFiles/rebuild_cache.dir
-/media/ritam/Storage/Projects/CLionProjects/Playground/Periodic_Table/CMakeFiles/Periodic_Table_With_Cplusplus.dir
-/media/ritam/Storage/Projects/CLionProjects/Playground/Periodic_Table/CMakeFiles/edit_cache.dir

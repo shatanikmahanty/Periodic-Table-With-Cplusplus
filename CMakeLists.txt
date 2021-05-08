@@ -5,7 +5,4 @@ set(CMAKE_CXX_STANDARD 14)
 
 project(Periodic_Table_With_Cplusplus)
 
-add_executable(
-    Periodic_Table_With_Cplusplus
-    main.cpp
-)
+add_executable(Periodic_Table_With_Cplusplus main.cpp)

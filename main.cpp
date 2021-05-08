@@ -1,5 +1,5 @@
-#include <bits/stdc++.h>
-
+#include <iostream>
+#include <vector>
 using namespace std;
 
 class Element {
@@ -537,7 +537,7 @@ void add_elements(vector<Element>& elements) {
     elements.push_back(oganesson);
 }
 
-void print_element(Element element) {
+void print_element(const Element& element) {
     cout << element.name << endl;
     cout << "\tSymbol : " << element.symbol << endl;
     cout << "\tAtomic Number : " << element.atomicNumber << endl;
@@ -649,7 +649,7 @@ void display_periodic_table(vector<Element> elements) {
     cout << endl << endl;
 }
 
-int main(int argc, char const* argv[]) {
+int main() {
     int choice;
     vector<Element> elements;
 
@@ -685,5 +685,4 @@ int main(int argc, char const* argv[]) {
         }
     }
 
-    return 0;
 }

@@ -1,1 +1,0 @@
-/usr/bin/c++     CMakeFiles/Periodic_Table_With_Cplusplus.dir/main.cpp.o  -o Periodic_Table_With_Cplusplus 
